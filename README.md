@@ -1,4 +1,7 @@
-# Random-Password-Generator-rpg-
+# Random-Password-Generator-rpg
+
+Under GNU GPLv3.
+
 A terminal based app that generates random passwords.
 
 Who is this app for? With random passwords generators on many websites why would anyone need their own? This app is for those who either don't trust websites or don't feel comfortable giving up control to a website. There's also the use case where some websites don't have a password generator and you may feel like you need one for security reasons. 
