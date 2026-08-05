@@ -21,7 +21,7 @@ The only dependencies is the GNU C++ compiler. Most Linux systems already have t
 
 ### On Windows
 
-There's an rpg.exe included. But dependencies are needed. An easy way to get the dependencies/libraries is to download and install [MinGW](https://www.mingw-w64.org/downloads/). After install just go into windows terminal and run the rpg.exe.
+There's an rpg.exe included. But dependencies are needed. An easy way to get the dependencies/libraries is to download and install [MinGW](https://www.mingw-w64.org/downloads/). Please make sure to run the mingwvars.bat after downloading. After that, just go to the windows terminal and run the rpg.exe.
 
 ### On Mac
 
