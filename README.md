@@ -11,15 +11,25 @@ This app is coded in c++ and is small and pretty simple to use. All you do is ca
 
 ### On Linux
 
-All you have to do is to open the terminal/windows terminal in the folder where you have the rpg.cpp file. Then execute the following lines:
+All you have to do is to open the terminal in the folder where you have the rpg.cpp file. Then execute the following lines:
 
 gcc rpg.cpp -o rpg
 chmod +x rpg
 
-The only dependencies is the GNU C++ compiler.
+The only dependencies is the GNU C++ compiler. Most Linux systems already have that compiler.
+
 
 ### On Windows
 
 There's an rpg.exe included. But dependencies are needed. An easy way to get the dependencies/libraries is to download and install [MinGW](https://www.mingw-w64.org/downloads/). After install just go into windows terminal and run the rpg.exe.
 
 ### On Mac
+
+Before you do anything, make sure you have GNU C++ compiler, the only dependencies. [This article](https://osxdaily.com/2023/05/02/how-install-gcc-mac/) gives instructions on how to install the compiler.
+
+After that, use the terminal in the folder where you have the rpg.cpp file. Then execute the following lines:
+
+gcc rpg.cpp -o rpg
+chmod +x rpg
+
+You should get a file called rpg. That's your executable. To run it type "./rpg" when you are in the same folder as the file.
