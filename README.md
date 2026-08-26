@@ -6,6 +6,10 @@ A terminal based app that generates random passwords.
 
 Who is this app for? With random passwords generators on many websites why would anyone need their own? This app is for those who either don't trust websites or don't feel comfortable giving up control to a website. There's also the use case where some websites don't have a password generator and you may feel like you need one for security reasons. 
 
+## Disclaimer
+
+Random Password Generator (rpg) does not record any passwords. It assumes the user will take ownership, control, and responsibility of any and all passwords generated. It is up to the user to record the passwords as they see fit or not at all.  
+
 ## Use
 
 This app is coded in c++ and is small and pretty simple to use. All you do is call it up in your terminal or windows terminal. It will ask you how many characters you want your password to be. It generates it for you. You copy that and past it where you need to. The app will ask you if you want another. If you say "n" it will shutdown. If you say "y" it will go through the process again.
