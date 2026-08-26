@@ -12,13 +12,19 @@ Got ideas on cryptography from https://generate-random.org/passwords/cpp
 #include <iostream>
 #include <string>
 #include <random>
+#include <limits>
+
 using namespace std;
 
 int askout(int size) {
 	
 	cout << "\nHow many characters?: ";
-	cin >> size;
-	
+	while (!(cin >> size)) { //make sure size is a number.
+		cout << "That was not a number. Please try again: ";
+		cin.clear(); //clearing the error
+		cin.ignore(numeric_limits<streamsize>::max(), '\n'); //dicarding the input		
+		};
+
 	return size;
 	};
 
@@ -36,7 +42,7 @@ bool asknew(string forward) {
 		return true;
 	else
 		return false;
-};
+	};
 
 bool firstchar(char fchar, string letters) {
 
@@ -51,7 +57,7 @@ bool firstchar(char fchar, string letters) {
 		return false;
 	else
 		return true;
-};
+	};
 
 int main() {
 	
@@ -68,9 +74,7 @@ int main() {
 	string pswdstr;
 	
 	cout << "Random Password Generator\n";
-	/* TODO
-	* Make sure the first character is not a special character.
-	*/
+
 	do { //looping to control the application for the user.
 		//ask how what size is the password
 		size = askout(size);
@@ -84,16 +88,17 @@ int main() {
 			
 			for (int i = 0; i < size; ++i) {
 				pswdstr += alphabet[distrib(gen)];
-			};
-		} while(firstchar(pswdstr[0],uppercase + lowercase)); //if first character of pswdstr is not
+				};
+			} while(firstchar(pswdstr[0],uppercase + lowercase)); //if first character of pswdstr is not
 		// a letter, then find a new password.
 	
-	}
-	while(asknew(pswdstr)); //display password and ask if want another
+		} while(asknew(pswdstr)); //display password and ask if want another
 	
-	}
-
-    std::cout << simplePassword << std::endl;  // Example: aB3xY7mN2pQ9
-
-    return 0;
 }
+
+
+
+
+
+
+	
